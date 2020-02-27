@@ -1,0 +1,101 @@
+/* slide second last text overlap on image */
+
+/* get our dream home now css start */
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    height: 80%;
+  }
+  
+  
+  
+  
+  /* Centered text */
+  .centered-top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+  
+  }
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 20px;
+   
+  }
+
+  .centered-button {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 20px;
+   
+  }
+  
+
+
+
+  .centered1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+  
+  }
+  /* get our dream home now css end */
+  
+
+
+
+
+
+
+
+
+
+
+.project-item .hover-effect {
+	position: absolute;
+	background-color: transparent;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+
+/* .project-item .hover-effect i {
+	text-align: center;
+	margin-top: 5%;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-color: #fff;
+	line-height: 46px;
+	color: #a2cf8d;
+	border-radius: 50%;
+	font-size: 18px;
+} */
+ /* .project-item .hover-effect i:hover {
+	background-color: #5c9d7d;
+	color: #fff;
+	transition: all 0.5s;
+} */
+
+.project-item:hover .hover-effect {
+	opacity: 1;
+	visibility: visible;
+} 

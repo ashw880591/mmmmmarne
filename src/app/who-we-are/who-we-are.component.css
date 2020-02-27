@@ -1,0 +1,45 @@
+/* p { margin: 0 !important; } */
+
+/* h6 
+{ 
+    margin: 0 ;
+    padding: 0; 
+} */
+/* slide second last text overlap on image */
+
+/* get our dream home now css start */
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  /* text-align: center; */
+  /* color: white; */
+  height: 80%;
+}
+
+
+
+
+/* Centered text */
+.centered-top {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+
+  
+}
+
+/* get our dream home now css end */
+

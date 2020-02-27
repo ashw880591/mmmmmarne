@@ -1,0 +1,64 @@
+<!-- <img src="assets/background.jpg"  alt="Logo" >  -->
+
+<div class="jumbotron container-fliud image">
+
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-xs-4"></div>
+        <div class="col-sm-4 col-md-4 col-xs-4">
+    <form  [formGroup]="loginModel">
+
+        <div class="card image1" >
+            <div class="card-body ">
+                <div class="" style="background-color: orange; color: orange;">aaa</div>
+                <h1 style="color: white;" >Login</h1>
+
+                <div class="form-group input-group-lg">
+                    <label for="emailid"></label>
+                    <input type="text" id="emailid" class="form-control" placeholder="Email Address" formControlName="emailid">
+
+                     <div class="validation" *ngIf="loginModel.controls['emailid'].hasError('required')
+                        && (loginModel.controls['emailid'].touched||loginModel.controls['emailid'].dirty)">
+                        <b>This Field is requried</b>
+                    </div>
+                    <div class="validation" *ngIf="loginModel.controls['emailid'].hasError('pattern')">
+                        <b>Invalid contact number</b>
+                    </div> 
+                </div>
+              <div class="form-group input-group-lg">
+                        <label for="password"></label>
+                        <input type="password" id="password" class="form-control" placeholder="Password"
+                            formControlName="password">
+                        <div class="validation" *ngIf="loginModel.controls['password'].hasError('required')
+                    && (loginModel.controls['password'].touched||loginModel.controls['password'].dirty)">
+                            <b>This Field is requried</b>
+                        </div>
+                        <div class="validation" *ngIf="loginModel.controls['password'].hasError('pattern')">
+                                <b>Password must be 7 character long</b>
+                            </div> 
+
+                    </div>
+             <div class="">
+                        <a href="ForgotPassword" style="margin-left: 100px; color: white;">Forget password</a>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <!-- <div class="button_group" style="justify-content: center"> -->
+                        <div class="button_group">
+                            <button type="submit"[routerLink]="[Dashboard]"   class="btn  btn-sm btn-success"
+                                style="margin-right: 25px" (click)="loginVerify(loginModel.value)" [disabled]="!loginModel.valid">Login</button>
+                            <!-- [disabled]="!loginModel.valid" -->
+                        </div>
+                    </div>
+                  
+            </div>
+            </div>
+            </form>
+
+
+
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,272 @@
+
+
+/* SHIFT */
+ nav.shift ul li a { 
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+} */
+
+
+
+
+
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+ 
+.mynav li:not(:last-child) {
+  /* margin-right: 20px; */
+}
+ 
+.mynav a {
+  display: block;
+  /* font-size: 20px; */
+  color: red;
+  text-decoration: none;
+  /* padding: 7px 15px; */
+}
+ 
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+ 
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-search{
+  margin-top: 31px;
+  margin-right: 50px;
+  min-width: 33px;
+
+ 
+}
+
+.search{
+}
+
+
+
+
+
+/* search button css start */
+
+
+/* search button css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header dropdown css start*/
+
+
+.dropdown-menu {
+    display: block;
+    min-width: 160px;
+    opacity: 0;
+    padding: 0;
+    top: 130%;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(3px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+  }
+  .main-header .mainmenu-area .navbar ul li:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .main-header .mainmenu-area .navbar ul li.dropdown > a:after {
+    font-family: 'IcoFont' !important;
+    content: "\eb25";
+    position: absolute;
+    color: #fff;
+    
+    top: auto;
+    right: 5px;
+    font-size: 14px;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+  }
+  
+  .dropdown-menu li > a {
+    clear: both;
+    
+    display: block;
+    line-height: 1.42857;
+    padding: 12px 0 11px 20px;
+    text-transform: capitalize;
+    color: #333;
+    background: #fff !important;
+    box-shadow: none !important;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  
+  .dropdown-menu li:not(:last-child) > a {
+    border-bottom: 1px solid #ddd;
+  }
+  .main-header .mainmenu-area .navbar .dropdown-menu li > a.active {} 
+  .dropdown-menu li > a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .dropdown-menu li > a:hover:before,
+  .dropdown-menu li > a:focus:before,
+  .dropdown-menu li > a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .dropdown-menu li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:active {
+    color: #fff !important;
+  }
+  .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    top: 97%;
+    
+    visibility: visible;
+  }
+  .dropdown-menu .dropdown > .dropdown-menu {
+    left: 300%;
+    margin-top: -1px;
+    min-width: 170px;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display: block;
+    
+  }
+  .dropdown-menu .dropdown:hover > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    
+    left: 10%;
+  }
+  
+  /* header dropdown css end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

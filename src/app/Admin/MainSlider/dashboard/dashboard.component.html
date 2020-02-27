@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-2">
+    <div class="sidebar  ">
+      <a class="active" routerLink="Registration"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+      <a routerLink="RegistrationTable"><i class="fa fa-fw fa-book " aria-hidden="true"></i>Main Slider</a>
+      <a routerLink="changepassword"><i class="fa fa-fw fa-key" aria-hidden="true"></i>Change Password</a>
+
+      <a routerLink="RegistrationTable"><i class="fa  fa-fw fa-bars"></i>Registration Table</a>
+      <a href="#about"><i class="fa fa-fw fa-wrench"></i>Order Status</a>
+      <a routerLink="editprofile"><i class="fa fa-check-square" aria-hidden="true"></i>NA</a>
+      <a href="#about"><i class="fa fa-fw fa-star" aria-hidden="true"></i>Feedback/Rating</a>
+      <a routerLink="deleteaccount"><i class="fa fa-fw fa-trash" aria-hidden="true"></i>Delete Account</a>
+      <a routerLink="logout"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+    </div>
+  </div>
+  <div class="col-sm-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
